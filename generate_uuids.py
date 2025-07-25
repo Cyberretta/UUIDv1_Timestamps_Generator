@@ -36,8 +36,8 @@ def getTimestamps(start_date, end_date):
 if __name__ == "__main__":
         parser = argparse.ArgumentParser()
         parser.add_argument("uuid", help="The original UUID used as base to generate other UUIDs", type=str)
-        parser.add_argument("start_date", help="Start date of generated UUIDs", type=str)
-        parser.add_argument("end_date", help="End date of generated UUIDs", type=str)
+        parser.add_argument("start_date", help="Start date for UUIDs generation (Format: YYYY-MM-DD HH:MM:SS.ffffffd)", type=str)
+        parser.add_argument("end_date", help="End date for UUIDs generation (Format: YYYY-MM-DD HH:MM:SS.ffffffd)", type=str)
         parser.add_argument("--output", help="Path to the output file", type=str)
         args = parser.parse_args()
 
